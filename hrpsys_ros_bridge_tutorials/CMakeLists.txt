@@ -745,6 +745,10 @@ if(${jsk_models_FOUND})
   attach_sensor_and_endeffector_to_staro_urdf(TABLIS TABLIS.urdf TABLIS_SENSORS.urdf tablis.yaml)
 endif()
 
+if(${jsk_models_FOUND})
+  attach_sensor_and_endeffector_to_staro_urdf(JAXON_BLUE JAXON_BLUE.urdf JAXON_BLUE_SENSORS.urdf jaxon_blue.yaml)
+endif()
+
 # for SampleRobot
 attach_sensor_and_endeffector_to_hrp2jsk_urdf(SampleRobot SampleRobot.urdf
   SampleRobot_WH_SENSORS.urdf samplerobot.yaml)
